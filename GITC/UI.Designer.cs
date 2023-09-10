@@ -1,4 +1,4 @@
-﻿namespace ITRocketLaunch
+﻿namespace GITC
 {
     partial class UI
     {

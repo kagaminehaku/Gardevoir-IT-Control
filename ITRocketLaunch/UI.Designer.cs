@@ -31,6 +31,7 @@
             this.Enable = new System.Windows.Forms.Button();
             this.Disable = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Exit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,13 +66,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Desktop Computer/Network Icon";
             // 
-            // Form1
+            // Exit
+            // 
+            this.Exit.Location = new System.Drawing.Point(713, 415);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 23);
+            this.Exit.TabIndex = 3;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            // 
+            // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "UI";
             this.Text = "Gardevoir IT Control";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -83,6 +94,7 @@
         private System.Windows.Forms.Button Enable;
         private System.Windows.Forms.Button Disable;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button Exit;
     }
 }
 

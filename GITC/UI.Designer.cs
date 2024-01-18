@@ -28,65 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Enable = new System.Windows.Forms.Button();
-            this.Disable = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Exit = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI));
+            Enable = new System.Windows.Forms.Button();
+            Disable = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            Exit = new System.Windows.Forms.Button();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // Enable
             // 
-            this.Enable.Location = new System.Drawing.Point(64, 19);
-            this.Enable.Name = "Enable";
-            this.Enable.Size = new System.Drawing.Size(75, 23);
-            this.Enable.TabIndex = 0;
-            this.Enable.Text = "Enable";
-            this.Enable.UseVisualStyleBackColor = true;
-            this.Enable.Click += new System.EventHandler(this.Enable_Click);
+            Enable.Location = new System.Drawing.Point(75, 22);
+            Enable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Enable.Name = "Enable";
+            Enable.Size = new System.Drawing.Size(88, 27);
+            Enable.TabIndex = 0;
+            Enable.Text = "Enable";
+            Enable.UseVisualStyleBackColor = true;
+            Enable.Click += Enable_Click;
             // 
             // Disable
             // 
-            this.Disable.Location = new System.Drawing.Point(64, 59);
-            this.Disable.Name = "Disable";
-            this.Disable.Size = new System.Drawing.Size(75, 23);
-            this.Disable.TabIndex = 1;
-            this.Disable.Text = "Disable";
-            this.Disable.UseVisualStyleBackColor = true;
-            this.Disable.Click += new System.EventHandler(this.Disable_Click);
+            Disable.Location = new System.Drawing.Point(75, 68);
+            Disable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Disable.Name = "Disable";
+            Disable.Size = new System.Drawing.Size(88, 27);
+            Disable.TabIndex = 1;
+            Disable.Text = "Disable";
+            Disable.UseVisualStyleBackColor = true;
+            Disable.Click += Disable_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Disable);
-            this.groupBox1.Controls.Add(this.Enable);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Desktop Computer/Network Icon";
+            groupBox1.Controls.Add(Disable);
+            groupBox1.Controls.Add(Enable);
+            groupBox1.Location = new System.Drawing.Point(14, 14);
+            groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Size = new System.Drawing.Size(233, 115);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Desktop Computer/Network Icon";
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(713, 415);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(75, 23);
-            this.Exit.TabIndex = 3;
-            this.Exit.Text = "Exit";
-            this.Exit.UseVisualStyleBackColor = true;
+            Exit.Location = new System.Drawing.Point(832, 479);
+            Exit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Exit.Name = "Exit";
+            Exit.Size = new System.Drawing.Size(88, 27);
+            Exit.TabIndex = 3;
+            Exit.Text = "Exit";
+            Exit.UseVisualStyleBackColor = true;
             // 
             // UI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Exit);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "UI";
-            this.Text = "Gardevoir IT Control";
-            this.groupBox1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.Control;
+            ClientSize = new System.Drawing.Size(933, 519);
+            Controls.Add(Exit);
+            Controls.Add(groupBox1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "UI";
+            StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            Text = "Gardevoir IT Control";
+            groupBox1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

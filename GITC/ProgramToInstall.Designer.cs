@@ -59,5 +59,135 @@ namespace GITC {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] install_all {
+            get {
+                object obj = ResourceManager.GetObject("install_all", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2005_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2005_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2005_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2005_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2008_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2008_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2008_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2008_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2010_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2010_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2010_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2010_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2012_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2012_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2012_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2012_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2013_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2013_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2013_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2013_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2015_2017_2019_2022_x64 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2015_2017_2019_2022_x64", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] vcredist2015_2017_2019_2022_x86 {
+            get {
+                object obj = ResourceManager.GetObject("vcredist2015_2017_2019_2022_x86", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

@@ -33,6 +33,7 @@
             Disable = new System.Windows.Forms.Button();
             groupBox1 = new System.Windows.Forms.GroupBox();
             Exit = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -73,20 +74,32 @@
             // 
             // Exit
             // 
-            Exit.Location = new System.Drawing.Point(832, 479);
+            Exit.Location = new System.Drawing.Point(327, 82);
             Exit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Exit.Name = "Exit";
             Exit.Size = new System.Drawing.Size(88, 27);
             Exit.TabIndex = 3;
             Exit.Text = "Exit";
             Exit.UseVisualStyleBackColor = true;
+            Exit.Click += Exit_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(317, 36);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(111, 27);
+            button1.TabIndex = 4;
+            button1.Text = "Install Visual C++ ";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // UI
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.Control;
-            ClientSize = new System.Drawing.Size(933, 519);
+            ClientSize = new System.Drawing.Size(511, 172);
+            Controls.Add(button1);
             Controls.Add(Exit);
             Controls.Add(groupBox1);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
@@ -104,6 +117,7 @@
         private System.Windows.Forms.Button Disable;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button button1;
     }
 }
 

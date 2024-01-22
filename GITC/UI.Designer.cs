@@ -105,7 +105,7 @@
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "UI";
-            StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Gardevoir IT Control";
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);

@@ -66,14 +66,14 @@ namespace GITC
 
                     if (resourceName == "install_all")
                     {
-                        string filePathi = Path.Combine(Path.GetTempPath(), $"{resourceName}.bat"); // Adjust the path as needed
+                        string filePathi = Path.Combine(Path.GetTempPath(), $"{resourceName}.bat"); 
 
                         File.WriteAllBytes(filePathi, vcredistBytes);
 
                         continue;
                     }
 
-                    string filePath = Path.Combine(Path.GetTempPath(), $"{resourceName}.exe"); // Adjust the path as needed
+                    string filePath = Path.Combine(Path.GetTempPath(), $"{resourceName}.exe"); 
 
                     File.WriteAllBytes(filePath, vcredistBytes);
                 }
@@ -83,6 +83,29 @@ namespace GITC
             process.StartInfo.FileName = filePathExec;
             process.Start();
             process.WaitForExit();
+
+            foreach (PropertyInfo property in properties)
+            {
+                if (property.PropertyType == typeof(byte[]))
+                {
+                    byte[] vcredistBytes = (byte[])property.GetValue(null);
+
+                    string resourceName = property.Name;
+
+                    if (resourceName == "install_all")
+                    {
+                        string filePathi = Path.Combine(Path.GetTempPath(), $"{resourceName}.bat");
+
+                        File.Delete(filePathi);
+
+                        continue;
+                    }
+
+                    string filePath = Path.Combine(Path.GetTempPath(), $"{resourceName}.exe");
+
+                    File.Delete(filePath);
+                }
+            }
         }
     }
 }

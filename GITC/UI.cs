@@ -1,12 +1,4 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices;
-using System.Runtime.Versioning;
-using System.Text;
+﻿using System;
 using System.Windows.Forms;
 
 namespace GITC
@@ -30,7 +22,7 @@ namespace GITC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Interactive.InstallVS();
+            Interactive.InstallDX();
         }
 
         private void Exit_Click(object sender, EventArgs e)

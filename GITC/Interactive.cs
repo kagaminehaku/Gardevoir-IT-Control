@@ -49,10 +49,49 @@ namespace GITC
 
             RestartWindowsExplorer();
         }
+        public static void InstallDX()
+        {
+            Type programToInstallType = typeof(GITC.DX);
 
+            PropertyInfo[] properties = programToInstallType.GetProperties(BindingFlags.Static | BindingFlags.NonPublic);
+
+            foreach (PropertyInfo property in properties)
+            {
+                if (property.PropertyType == typeof(byte[]))
+                {
+                    byte[] dxBytes = (byte[])property.GetValue(null);
+
+                    string resourceName = property.Name;
+
+                    string filePath = Path.Combine(Path.GetTempPath(), $"{resourceName}.exe");
+
+                    File.WriteAllBytes(filePath, dxBytes);
+                }
+            }
+            Process process = new Process();
+            string filePathExec = Path.Combine(Path.GetTempPath(), $"dxwebsetup.exe");
+            process.StartInfo.FileName = filePathExec;
+            process.Start();
+            process.WaitForExit();
+
+            foreach (PropertyInfo property in properties)
+            {
+                if (property.PropertyType == typeof(byte[]))
+                {
+                    byte[] dxBytes = (byte[])property.GetValue(null);
+
+                    string resourceName = property.Name;
+
+
+                    string filePath = Path.Combine(Path.GetTempPath(), $"{resourceName}.exe");
+
+                    File.Delete(filePath);
+                }
+            }
+        }
         public static void InstallVS() 
         {
-            Type programToInstallType = typeof(GITC.ProgramToInstall);
+            Type programToInstallType = typeof(GITC.VS);
 
             PropertyInfo[] properties = programToInstallType.GetProperties(BindingFlags.Static | BindingFlags.NonPublic);
 

@@ -22,12 +22,12 @@ namespace GITC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Interactive.InstallDX();
+            Interactive.InstallVS();
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Interactive.InstallDX();
         }
     }
 }

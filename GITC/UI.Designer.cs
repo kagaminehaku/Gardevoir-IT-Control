@@ -32,9 +32,11 @@
             Enable = new System.Windows.Forms.Button();
             Disable = new System.Windows.Forms.Button();
             groupBox1 = new System.Windows.Forms.GroupBox();
-            Exit = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // Enable
@@ -72,20 +74,9 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Desktop Computer/Network Icon";
             // 
-            // Exit
-            // 
-            Exit.Location = new System.Drawing.Point(327, 82);
-            Exit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Exit.Name = "Exit";
-            Exit.Size = new System.Drawing.Size(88, 27);
-            Exit.TabIndex = 3;
-            Exit.Text = "Exit";
-            Exit.UseVisualStyleBackColor = true;
-            Exit.Click += Exit_Click;
-            // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(317, 36);
+            button1.Location = new System.Drawing.Point(66, 22);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(111, 27);
             button1.TabIndex = 4;
@@ -93,21 +84,42 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(66, 68);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(111, 27);
+            button2.TabIndex = 5;
+            button2.Text = "Install DirectX";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(button1);
+            groupBox2.Location = new System.Drawing.Point(266, 14);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(233, 115);
+            groupBox2.TabIndex = 6;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Game Components";
+            // 
             // UI
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.Control;
-            ClientSize = new System.Drawing.Size(511, 172);
-            Controls.Add(button1);
-            Controls.Add(Exit);
+            ClientSize = new System.Drawing.Size(511, 263);
             Controls.Add(groupBox1);
+            Controls.Add(groupBox2);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "UI";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Gardevoir IT Control";
             groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -116,8 +128,9 @@
         private System.Windows.Forms.Button Enable;
         private System.Windows.Forms.Button Disable;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

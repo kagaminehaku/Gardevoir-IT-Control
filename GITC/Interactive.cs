@@ -49,7 +49,7 @@ namespace GITC
 
             RestartWindowsExplorer();
         }
-        public static void InstallDX()
+        public static void InstallSW()
         {
             Type programToInstallType = typeof(GITC.DX);
 
